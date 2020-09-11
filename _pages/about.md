@@ -31,7 +31,7 @@ Software Engineer Specialist
 
 * Autónoma del Caribe University, 2007 
 
-Systems engineer 
+Systems Engineer 
 
 ## CERTIFICATIONS 
 
