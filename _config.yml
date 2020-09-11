@@ -22,6 +22,9 @@ github_username: EduardoOrtegaME
 minimal_mistakes_skin: air
 search: true
 
+# Masthead
+masthead_title: "{blog}"
+
 # Build settings
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
