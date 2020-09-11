@@ -8,7 +8,7 @@ I am a Software Developer with a bachelor degree in Systems Engineer and a few c
 I’m an active proponent of new architectures and the use of design patterns across the app, I love the way you can simplify the process of software maintenance just by writing well-structured code and using interfaces and patterns. In my free time I love to read books about development and those about how to improve the code quality, also I love to teach all what I’ve learned.
 
 SKILLS
-======
+=
 
 BACK-END 
 --------
