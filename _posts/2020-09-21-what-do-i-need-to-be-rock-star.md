@@ -7,6 +7,8 @@ tags:
   - 
 ---
 
+The growing demand for software developers in the industry has led to an unprecedented race for knowledge, but is this enough?
+
 ## How it all started
 The software industry is growing by leaps and bounds, in the 80s only those who studied computer science were able to understand the complicated instructions that had to be introduced to a mainframe for it to process information. Nowadays software development has become a profession within everyone's reach, learning websites like udemy or freecodecamp teach anyone who has the patience and passion to develop software without ever having attended university.
 
