@@ -1,8 +1,8 @@
 ---
-title: "Imports in Node 12"
+title: "ECMAScript 6 Imports in Node.JS"
 date: 2020-10-15
 categories:
-  - Node
+  - Node.JS
 tags:
   - 
 ---
