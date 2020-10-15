@@ -1,6 +1,6 @@
 ---
-title: "What do I need to know to be a (Developer) rock star?"
-date: 2020-09-21
+title: "Imports in Node 12"
+date: 2020-10-15
 categories:
   - Node
 tags:
