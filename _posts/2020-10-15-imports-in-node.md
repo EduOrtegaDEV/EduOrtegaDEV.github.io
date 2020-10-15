@@ -13,7 +13,12 @@ Lately I've been into NodeJS, I worked with Node a year ago but back then I was 
 
 So if you apply this suggestion you will see this beatiful error when you try to run the app:
 
-![VS Code suggestion error](/assets/images/vscode-import-error.png)
+~~~
+import express from "express";
+^^^^^^
+
+SyntaxError: Cannot use import statement outside a module
+~~~
 
 So, what can I do in order to have this feature available in my code?, googling a little bit I found that by Node 13 this is an experimental feature (using a special flag) and by Node 14 still [Experimental](https://nodejs.org/api/esm.html#esm_modules_ecmascript_modules) but it doesn't need the flag anymore. This was not an option for me because we are using the LTS version of node, so what can I do?.
 
