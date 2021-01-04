@@ -35,6 +35,7 @@ Systems Engineer
 
 ## CERTIFICATIONS 
 
+* Contenful Certified Professional
 * Microsoft Certified Solutions Developer: App Builder 
 * Microsoft® Certified Technology Specialist: .NET Framework 4, Web Applications 
 * .NET Framework 3.5 ASP.NET Application 
