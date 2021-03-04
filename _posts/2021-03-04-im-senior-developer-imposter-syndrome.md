@@ -43,9 +43,13 @@ It’s hard for me to not do this although I am aware that each person has their
 Focus on my areas of interest and learn only what is necessary. And make this my mantra, let's repeat togheter:
 
 I DON'T NEED TO KNOW EVERYTHING.
+
 I DON'T NEED TO KNOW EVERYTHING.
+
 I DON'T NEED TO KNOW EVERYTHING.
+
 I DON'T NEED TO KNOW EVERYTHING.
+
 I DON'T NEED TO KNOW EVERYTHING.
 
 ## I am not a imposter
