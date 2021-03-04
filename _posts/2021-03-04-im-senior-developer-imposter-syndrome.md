@@ -54,5 +54,5 @@ I DON'T NEED TO KNOW EVERYTHING.
 
 I DON'T NEED TO KNOW EVERYTHING.
 
-## I am not a impostor
+## I am not an impostor
 I wrote my first line of code at the age of 12 and since I haven't stopped. Many others could have written their first line at the age of 10 or 5 it doesn't matter. I need to focus on what I know, what I'm good at and focus on that, even if it's just a drop in an ocean of knowledge.
