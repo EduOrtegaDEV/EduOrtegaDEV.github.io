@@ -9,7 +9,7 @@ tags:
 ---
 
 
-I have been programming since childhood, I work at a large company surrounded by extraordinary people that recognizes me as a Senior Developer, I have deployed applications for thousands of customers, I know algorithms, SOLID principles, Design Patterns, and even that sometimes I feel that I am not good enough; there is a little voice in my head telling me that someone at my current role should know: Docker, Kubernetes, DevOps, and a very large list that I don't know. This feeling of "faking it" it's better known as the Imposter Syndrome, and it's time to talk about it.
+I have been programming since childhood, I work at a large company surrounded by extraordinary people that recognizes me as a Senior Developer, I have deployed applications for thousands of customers, I know algorithms, SOLID principles, Design Patterns, and even that sometimes I feel that I am not good enough; there is a little voice in my head telling me that someone at my current role should know: Docker, Kubernetes, DevOps, and a very large list of things that I don't know. This feeling of "faking it" it's better known as the Imposter Syndrome, and it's time to talk about it.
 
 ![Among Us](/assets/images/impostor.png)
 
@@ -27,13 +27,13 @@ Now that I think about it I can list a setbacks that my imposter syndrome has di
  - Declined Microsoft, Amazon and Google interviews.
  - Keep growing in my professional career.
  - Panicking when I'm in a job interview.
- - Trying to learn everything (In order to shut the little voice).
+ - Trying to learn everything (In order to shut up the little voice).
  - Be very hard on myself.
 
 So I guess admiting it is the first step, so here are the things that I will try to fight this:
 
 ### Talk to my career manager
-We have like a couch in the company I work for, this person helps his mentees to reach their full potential, so I guess this is a good starting point if your company does not have a career manager you can contact a personal couch or a therapist.
+We have like a couch in the company I work for, this person helps his mentees to reach their full potential, so I guess this is a good starting point. If your company does not have a career manager you can contact a personal couch or a therapist.
 
 ### Make a list of my accomplishments
 I will make a list of all my accomplishments in my whole career, every time I feel like I don't deserve anything I'll review it and hopefully feel proud about it.
@@ -54,5 +54,5 @@ I DON'T NEED TO KNOW EVERYTHING.
 
 I DON'T NEED TO KNOW EVERYTHING.
 
-## I am not a imposter
-I wrote my first line of code at the age of 12 and since I haven't stopped. Many others could have written their first line at the age of 10 or 5 it doesn't matter. I need to focus on what I know, what I'm good at, and focus on that even if it's just a drop in an ocean of knowledge.
+## I am not a impostor
+I wrote my first line of code at the age of 12 and since I haven't stopped. Many others could have written their first line at the age of 10 or 5 it doesn't matter. I need to focus on what I know, what I'm good at and focus on that, even if it's just a drop in an ocean of knowledge.
