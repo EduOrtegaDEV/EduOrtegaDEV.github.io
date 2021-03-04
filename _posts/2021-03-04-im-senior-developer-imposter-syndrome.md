@@ -40,15 +40,12 @@ I will make a list of all my accomplishments in my whole career, every time I fe
 It’s hard for me to not do this although I am aware that each person has their own rate of growth and learning. It’s like when I am in a job interview and the interviewer asks me: on a scale of 1 to 10 how good are you at C#? I think that the question itself is wrong given that for instance for me a 10 is [Anders Hejlsberg](https://en.wikipedia.org/wiki/Anders_Hejlsberg) and compared to him I’m just a 2 (Here is again the little voice).
 
 ### Don't dispair on what I don't know and make a study plan instead
-Focus on my areas of interest and learn only what is necessary. And make this my mantra:
-I DON'T NEED TO KNOW EVERYTHING.
+Focus on my areas of interest and learn only what is necessary. And make this my mantra, let's repeat togheter:
 
 I DON'T NEED TO KNOW EVERYTHING.
-
 I DON'T NEED TO KNOW EVERYTHING.
-
 I DON'T NEED TO KNOW EVERYTHING.
-
+I DON'T NEED TO KNOW EVERYTHING.
 I DON'T NEED TO KNOW EVERYTHING.
 
 ## I am not a imposter
