@@ -1,5 +1,5 @@
 ---
-title: "I'm a senior developer and have the imposter syndrome"
+title: "I'm a senior developer and have the impostor syndrome"
 date: 2021-03-04
 categories:
   - career development
