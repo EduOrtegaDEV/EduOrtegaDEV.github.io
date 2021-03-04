@@ -9,7 +9,7 @@ tags:
 ---
 
 
-I have been programming since childhood, I work at a large company surrounded by extraordinary people that recognizes me as a Senior Developer, I have deployed applications for thousands of customers, I know algorithms, SOLID principles, Design Patterns, and even that sometimes I feel that I am not good enough; there is a little voice in my head telling me that someone at my current role should know: Docker, Kubernetes, DevOps, and a very large list of things that I don't know. This feeling of "faking it" it's better known as the Imposter Syndrome, and it's time to talk about it.
+I have been programming since childhood, I work at a large company surrounded by extraordinary people that recognizes me as a Senior Developer, I have deployed applications for thousands of customers, I know algorithms, SOLID principles, Design Patterns, despite that sometimes I feel that I am not good enough; there is a little voice in my head telling me that someone at my current role should know: Docker, Kubernetes, DevOps, and a very large list of things that I don't know. This feeling of "faking it" it's better known as the Imposter Syndrome, and it's time to talk about it.
 
 ![Among Us](/assets/images/impostor.png)
 
