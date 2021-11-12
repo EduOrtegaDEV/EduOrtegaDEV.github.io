@@ -41,7 +41,7 @@ The problem with this approach is that we need to provide all the parameters whe
 ## The init keyword
 
 Now, what if we want to limit the initialization of a specific parameter to only the instantiation? (Like if we declare a field as read-only or using only get). This is when the Init only setters come into action, `init` is a simple keyword that will make a property settable ONLY at initialization and construction, it will throw an error otherwise:
-~~~ CSharp
+~~~ csharp
 class Person {
   public string name { get; init;}
   public int age { get; init;}
