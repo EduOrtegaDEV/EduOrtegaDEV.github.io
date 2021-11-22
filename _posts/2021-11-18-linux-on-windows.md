@@ -51,7 +51,7 @@ If everything went well, we can now use Ubuntu by opening a new tab in Windows T
 wslRegisterDistribution failed with error: 0x80370102
 ```
 
-What I did to fix this was enabling the CPU Virtualization in the BIOS, that lead us to conclude that what Windows does is creating a VM for executing Linux.
+What I did to fix this was enable the CPU Virtualization in the BIOS, which lead us to conclude that what Windows does is create a VM for executing Linux.
 
 That would be all for this time.
 
