@@ -1,0 +1,40 @@
+---
+title: "My favorites tools"
+date: 2022-09-02
+categories:
+  - Tools
+tags:
+  - 
+---
+
+Essentials tools every developer should install:
+
+- [Oh My Zsh!](https://ohmyz.sh/) - A delightful & open source framework for Zsh
+- [Tabby](https://tabby.sh/) - A terminal for the modern age
+- [Lens](https://k8slens.dev/) - The Kubernetes IDE
+- [Starship](https://starship.rs/) - The minimal, blazing-fast, and infinitely customizable prompt for any shell!
+
+VSCode extensions:
+
+- [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
+- [Output colorizer](https://marketplace.visualstudio.com/items?itemName=IBM.output-colorizer)
+- [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
+- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+- [YAML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml)
+- [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
+- [One Dark Pro](https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme)
+- [Thunder Client](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client)
+
+VSCode settings:
+~~~
+"editor.guides.bracketPairs" : true,
+"editor.bracketPairColorization.enabled" : true,
+"editor.formatOnSave" : true,
+"[typescript]" : {
+    "editor.defaultFormatter" : "esbenp.prettier-vscode"
+  },
+~~~
+
+Bonus for Mac:
+- [Tiles](https://freemacsoft.net/tiles/) - Windows manager
