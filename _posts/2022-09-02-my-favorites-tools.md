@@ -38,5 +38,8 @@ VSCode settings:
   },
 ~~~
 
+Cool ts-reset for improving Typescript:
+https://github.com/total-typescript/ts-reset
+
 Bonus for Mac:
 - [Tiles](https://freemacsoft.net/tiles/) - Windows manager
