@@ -25,6 +25,8 @@ VSCode extensions:
 - [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
 - [One Dark Pro](https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme)
 - [Thunder Client](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client)
+- [JSDoc Generator](https://marketplace.visualstudio.com/items?itemName=kimlimjustin.jsdoc-generator)
+- [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)
 
 VSCode settings:
 ~~~
