@@ -8,7 +8,7 @@ tags:
   - development
 ---
 
-Beign a .net developer for a very long time when I was learning NodeJS I was amazed by the flexibility of JS, one of my favourite features of javascript is deconstructing things and I didn't know that we have that in C# as well since it's 7.0 version! (Well kind of), let's take a look.
+I have been a .net developer for a very long time, when I was learning NodeJS I was amazed by the flexibility of JS, one of my favourite features of javascript is deconstructing things and I didn't know that we have that in C# as well since it's 7.0 version! (Well kind of), let's take a look.
 
 We can use deconstructuring in tuples or even objects, for tuples we only need to return the value as a tuple and receive the tuple using the deconstructing syntax, like this:
 
