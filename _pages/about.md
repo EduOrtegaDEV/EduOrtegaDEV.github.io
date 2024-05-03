@@ -17,7 +17,7 @@ Also, I’ve had experience creating Microservices architecture using .NET Core 
 
 ### FRONT-END
 
-I do not considre myself as a FullStack developer but I have some experience in HTML, CSS3 and JavaScript with exposure to React.
+I do not considre myself as a FullStack developer but I have some experience in React and React Native.
 
 ### OTHER SKILLS 
 
