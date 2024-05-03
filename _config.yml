@@ -16,7 +16,7 @@
 title: EduardoOrtega.ME()
 email:
 description: >- # this means to ignore newlines until "baseurl:"
-  A Software Developer that loves to write code, design stuff, learning and teach whatever I&#8217;m learning.
+  A Software Engineer that loves to write code, design stuff, learning and teach whatever I&#8217;m learning.
 twitter_username: procolab
 github_username: EduardoOrtegaME
 minimal_mistakes_skin: air
@@ -61,7 +61,7 @@ plugins:
 author:
   name   : "Eduardo Ortega"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "I am a Software Engineer who works as a Software Developer, I love coding and learning new things everyday."
+  bio    : "I am a Software Engineer who works as a Software Developer, I love coding and learning new things everyday. Here I write things to my future me."
   links:
     #- label: "Website"
     #  icon: "fas fa-fw fa-link"
