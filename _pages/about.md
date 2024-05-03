@@ -35,6 +35,8 @@ Systems Engineer
 
 ## CERTIFICATIONS 
 
+* AWS Certified Cloud Practitioner
+* Microsoft Certified: Azure Fundamentals
 * Contenful Certified Professional
 * Microsoft Certified Solutions Developer: App Builder 
 * Microsoft® Certified Technology Specialist: .NET Framework 4, Web Applications 
