@@ -1,5 +1,5 @@
 ---
-title: "The king of embedded databases: SQLite"
+title: "Long live embedded databases"
 date: 2024-05-15
 categories:
   - Databases
@@ -7,8 +7,6 @@ tags:
   - sqlite
   - database
 ---
-
-# Long live embedded databases
 
 ## Introduction
 Hey there, Edu from the future! As you embark on your programming journey, you'll encounter various types of projects that require efficient data storage solutions. Not all projects necessitate a complex database with elaborate drivers and client-server functionality. In fact, many small to mid-sized projects can thrive with a small, lightweight database that's integrated directly into the application. One excellent example of this is mobile apps that don't require API integration. An embedded database is the perfect fit, providing a seamless and hassle-free experience.
