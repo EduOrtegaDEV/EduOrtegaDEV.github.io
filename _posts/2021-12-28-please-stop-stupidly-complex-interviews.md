@@ -2,7 +2,7 @@
 title: "Please stop doing stupidly complex technical interviews!"
 date: 2021-12-28
 categories:
-  - offtopic
+  - career development
 tags:
   - career development
   - mental health
