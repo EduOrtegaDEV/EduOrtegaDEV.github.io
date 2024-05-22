@@ -13,17 +13,17 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: "Eduardo Ortega - Software Engineer, Cloud/Software Architect"
+title: MM
 email:
 description: >- # this means to ignore newlines until "baseurl:"
-  Cloud/Software Architect that loves to write code, design stuff, learning and teach whatever I&#8217;m learning.
+  Cloud/Software Architect that loves to write code, design stuff, learning and teach whatever I'm learning.
 twitter_username: procolab
 github_username: EduOrtegaDEV
 minimal_mistakes_skin: air
 search: true
 
 # Masthead
-masthead_title: "{blog}"
+masthead_title: "Eduardo Ortega's Blog"
 
 # Build settings
 markdown: kramdown
