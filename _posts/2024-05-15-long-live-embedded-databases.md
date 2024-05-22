@@ -4,7 +4,6 @@ date: 2024-05-15
 categories:
   - Databases
 tags:
-  - sqlite
   - database
 ---
 
