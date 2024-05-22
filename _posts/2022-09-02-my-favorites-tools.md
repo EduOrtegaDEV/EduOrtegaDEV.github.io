@@ -28,7 +28,7 @@ VSCode extensions:
 - [JSDoc Generator](https://marketplace.visualstudio.com/items?itemName=kimlimjustin.jsdoc-generator)
 - [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)
 
-[My VSCode settings](https://gist.github.com/eduortega85/e24fe33af408804d272fa500993d2f64)
+[My VSCode settings](https://gist.github.com/eduortegadev/e24fe33af408804d272fa500993d2f64)
 
 Cool ts-reset for improving Typescript:
 [https://github.com/total-typescript/ts-reset](https://www.npmjs.com/package/@total-typescript/ts-reset)
