@@ -16,7 +16,7 @@ An embedded database is a database management system (DBMS) that's integrated di
 
 **Popular Options**
 When it comes to choosing an embedded database, you're spoiled for choice. Some popular options include:
-1. **[Firebird](https://www.firebirdsql.org/)**: A powerful and open-source relational database that's widely used in various industries.
+1. **[Firebird](https://www.firebirdsql.org/)**: A powerful and open-source relational database that's widely used in various industries. The most important feature is that can run as an embedded database and as a client-server
 2. **DBF**: A file-based database that's simple to use and ideal for small projects.3.
 3. **[SQLite](https://www.sqlite.org/)**: A lightweight, self-contained database that's perfect for mobile and web applications.
 4. **[DuckDB](https://duckdb.org/)**: A columnar database that's designed for fast querying and data analysis.
