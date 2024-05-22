@@ -2,7 +2,7 @@
 title: "What do I need to know to be a (Developer) rock star?"
 date: 2020-09-21
 categories:
-  - offtopic
+  - career development
 tags:
   - 
 ---
