@@ -8,9 +8,7 @@ tags:
   - tools
 ---
 
-Hey future Edu,
-
-I want to take a moment to reflect on one of the most powerful features in VSCode that has greatly improved my productivity: VSCode Profiles.
+Hey future Edu, I want to take a moment to reflect on one of the most powerful features in VSCode that has greatly improved my productivity: VSCode Profiles.
 
 ## What are VSCode Profiles?
 VSCode Profiles allow you to create and manage multiple sets of settings, extensions, and UI customizations within a single VSCode installation. This feature is particularly useful for developers who work on different projects or have different workflows that require distinct configurations.
