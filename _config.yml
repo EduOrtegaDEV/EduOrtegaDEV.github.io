@@ -61,7 +61,7 @@ plugins:
 author:
   name   : "Eduardo Ortega"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "I am a Software Engineer who works as a Software Developer, I love coding and learning new things everyday. Here I write things to my future me."
+  bio    : "I am a Cloud/Software Architect who loves coding, design cloud apps and learning new things everyday. Here I write things to my future me."
   links:
     #- label: "Website"
     #  icon: "fas fa-fw fa-link"
