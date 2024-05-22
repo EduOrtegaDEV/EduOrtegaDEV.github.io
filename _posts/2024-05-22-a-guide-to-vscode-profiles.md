@@ -20,7 +20,7 @@ Imagine you're working on a project that requires a specific set of extensions, 
 ## How to Create and Manage VSCode Profiles
 Creating a new profile in VSCode is straightforward. You can do this by going to the Command Palette (Ctrl + Shift + P on Windows/Linux or Cmd + Shift + P on macOS), typing "Profiles: Create Profile," and following the prompts. Once you've created a new profile, you can switch between profiles by going to the Command Palette and typing "Profiles: Switch Profile." or simply by click in the gear icon in the bottom-left corner and then selecting profiles.
 
-Here are my current profiles for [JS](https://gist.github.com/EduardoOrtegaME/b0f40ec70b0fb8605676392999c1978e) and [C#](https://gist.github.com/EduardoOrtegaME/bdaaec8b4da3e8cee85d27d5fd35dee4).
+Here are my current profiles for [JS](https://gist.github.com/eduortega85/b0f40ec70b0fb8605676392999c1978e) and [C#](https://gist.github.com/eduortega85/bdaaec8b4da3e8cee85d27d5fd35dee4).
 
 Happy coding!
 
