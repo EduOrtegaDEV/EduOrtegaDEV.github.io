@@ -4,7 +4,8 @@ date: 2022-09-02
 categories:
   - Tools
 tags:
-  - 
+  - vscode
+  - tools
 ---
 
 Essentials tools every developer should install:
