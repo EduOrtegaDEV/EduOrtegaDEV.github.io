@@ -8,12 +8,11 @@ tags:
   - tools
 ---
 
-Essentials tools every developer should install:
+Here are my favorite tools for developing and VSCode:
 
 - [Oh My Zsh!](https://ohmyz.sh/) - A delightful & open source framework for Zsh
-- [Tabby](https://tabby.sh/) - A terminal for the modern age
+- [Warp](https://www.warp.dev/) - A terminal for the modern age
 - [Lens](https://k8slens.dev/) - The Kubernetes IDE
-- [Starship](https://starship.rs/) - The minimal, blazing-fast, and infinitely customizable prompt for any shell!
 
 VSCode extensions:
 
@@ -29,18 +28,10 @@ VSCode extensions:
 - [JSDoc Generator](https://marketplace.visualstudio.com/items?itemName=kimlimjustin.jsdoc-generator)
 - [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)
 
-VSCode settings:
-~~~
-"editor.guides.bracketPairs" : true,
-"editor.bracketPairColorization.enabled" : true,
-"editor.formatOnSave" : true,
-"[typescript]" : {
-    "editor.defaultFormatter" : "esbenp.prettier-vscode"
-  },
-~~~
+[My VSCode settings](https://gist.github.com/eduortega85/e24fe33af408804d272fa500993d2f64)
 
 Cool ts-reset for improving Typescript:
-https://github.com/total-typescript/ts-reset
+[https://github.com/total-typescript/ts-reset](https://gist.github.com/eduortega85/e24fe33af408804d272fa500993d2f64)
 
 Bonus for Mac:
 - [Tiles](https://freemacsoft.net/tiles/) - Windows manager
