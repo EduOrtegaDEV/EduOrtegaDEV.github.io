@@ -31,7 +31,7 @@ VSCode extensions:
 [My VSCode settings](https://gist.github.com/eduortega85/e24fe33af408804d272fa500993d2f64)
 
 Cool ts-reset for improving Typescript:
-[https://github.com/total-typescript/ts-reset](https://gist.github.com/eduortega85/e24fe33af408804d272fa500993d2f64)
+[https://github.com/total-typescript/ts-reset](https://www.npmjs.com/package/@total-typescript/ts-reset)
 
 Bonus for Mac:
 - [Tiles](https://freemacsoft.net/tiles/) - Windows manager
