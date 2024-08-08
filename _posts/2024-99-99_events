@@ -1,0 +1,24 @@
+---
+title: "Event skeleton"
+date: 2024-99-99
+categories:
+  - EDA
+  - Events
+tags:
+  - 
+---
+
+{
+  "specVersion": "1.0",
+  "type": "orderCreated.v1",
+  "source": "product.orders",
+  "id": "00000-000000-000000-0000",
+  "time": "2024-06-12T15:32:00Z"
+  "datacontenttype": "application/json",
+  "data": {
+    "orderId": "ABC123",
+    "orderNumber": "ORD689"
+  }
+}
+
+Happy coding!
