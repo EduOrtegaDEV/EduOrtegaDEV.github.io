@@ -41,6 +41,7 @@ FROM mcr.microsoft.com/devcontainers/dotnet:1-8.0
   "dockerfile": "Dockerfile"
 }
 ```
+
 5. #### Rebuild and Reopen in Container
 
 Use the Command Palette again:
