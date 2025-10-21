@@ -54,7 +54,7 @@ Or push the green `><` button in the bottom left and select `Open Container Conf
 ### Step 6: Install Extensions Inside the Container
 You can install VSCode extensions within the container. This keeps your host clean and your container self-contained.
 
-### Step 6: Start Coding!
+### Step 7: Start Coding!
 Your code is on your host machine but runs inside the container. You get all the benefits of containerized development—isolated dependencies, reproducible environments, and easy Git integration.
 
 ### Bonus: Multi-Service Development with Docker Compose
