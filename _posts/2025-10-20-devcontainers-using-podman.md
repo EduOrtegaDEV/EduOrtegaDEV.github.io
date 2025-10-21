@@ -14,10 +14,10 @@ That said, I prefer Podman for several reasons, mainly because it's daemonless a
 
 ### Configuring Dev Containers with Podman
 
-1. #### Install the Dev Containers Extension
+#### Install the Dev Containers Extension
 Get the [Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) from the VSCode Marketplace.
 
-2. #### Configure the Extension to Use Podman
+#### Configure the Extension to Use Podman
 	- Click on the extension settings gear icon.
 	- Search for Docker Path and Docker Compose Path.
 	- Set the paths to your Podman and Podman Compose binaries. For example:
@@ -25,10 +25,10 @@ Get the [Dev Containers extension](https://marketplace.visualstudio.com/items?it
 Docker Path: /usr/bin/podman
 Docker Compose Path: /usr/bin/podman-compose
 ```
-3. #### Add Dev Container Configuration Files
+#### Add Dev Container Configuration Files
 	- Open the Command Palette (F1) and run: `Dev Containers: Add Dev Container Configuration Files`.
 	- Choose the stack or environment you require (Node.js, Python, .NET, etc.).
-4. #### Personalize Your Dev Container Configuration
+#### Personalize Your Dev Container Configuration
 This command creates a .devcontainer folder with a devcontainer.json file. You can use the default image or build your own. Here is how you can build a custom image:
 - Create a Dockerfile. Example base image:
 ```
@@ -42,17 +42,17 @@ FROM mcr.microsoft.com/devcontainers/dotnet:1-8.0
 }
 ```
 
-5. #### Rebuild and Reopen in Container
+#### Rebuild and Reopen in Container
 
 Use the Command Palette again:
 `Dev Containers: Rebuild and Reopen in Container`
 
 Or push the green >< button in the bottom left and select `Open Container Configuration File`.
 
-6. #### Install Extensions Inside the Container
+#### Install Extensions Inside the Container
 You can install VSCode extensions within the container. This keeps your host clean and your container self-contained.
 
-7. #### Start Coding!
+#### Start Coding!
 Your code is on your host machine but runs inside the container. You get all the benefits of containerized development—isolated dependencies, reproducible environments, and easy Git integration.
 
 #### Bonus: Multi-Service Development with Docker Compose
