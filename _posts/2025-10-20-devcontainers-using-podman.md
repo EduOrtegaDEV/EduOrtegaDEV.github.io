@@ -38,7 +38,6 @@ This command creates a .devcontainer folder with a devcontainer.json file. You c
 FROM mcr.microsoft.com/devcontainers/dotnet:1-8.0
 ```
 - Update your devcontainer.json by replacing the `image` attribute for the `build` attribute:
-
 ```json
 "build": {
   "dockerfile": "Dockerfile"
