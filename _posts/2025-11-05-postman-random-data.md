@@ -21,13 +21,15 @@ Each time you send a request, Postman replaces these with fresh, randomized valu
 
 Let’s say you’re testing a user registration endpoint. Instead of hardcoding values, you can do something like:
 
-```json
+{% raw %}
+```text
 {
-  "email": "\{\{$randomEmail\}\}",
-  "name": "\{\{$randomFirstName\}\} \{\{$randomLastName\}\}",
-  "phone": "\{\{$randomPhoneNumber\}\}"
+  "email": "{{$randomEmail}}",
+  "name": "{{$randomFirstName}} {{$randomLastName}}",
+  "phone": "{{$randomPhoneNumber}}"
 }
 ```
+{% endraw %}
 
 Pretty neat, uh?
 
