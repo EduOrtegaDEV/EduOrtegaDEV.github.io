@@ -11,7 +11,8 @@ Postman has a list of built-in dynamic variables, which will generate random val
 {{$randomEmail}}
 {{$randomFirstName}}
 {{$randomPhoneNumber}}
-{{$randomInt}}{{$randomUUID}}
+{{$randomInt}}
+{{$randomUUID}}
 ```
 {% endraw %}
 
