@@ -1,10 +1,8 @@
-# Postman's Feature: Random Data
-
 Hey future Edu,
 
 Do you know how when you're testing an API, you need a bunch of fake data (email addresses, names, telephone numbers), and you really don't wanna do it by hand, or copy/paste it from a lorem ipsum generator because we are lazy? Postman has a useful feature that does exactly this, and you may have even seen it without knowing it was an option: **random data variables**.
 
-## 🎲 What Are Random Variables in Postman?
+## What Are Random Variables in Postman?
 
 Postman has a list of built-in dynamic variables, which will generate random values for you, on the fly. You can use them in your request body, headers, URL parameters, or pretty much anywhere you'd normally use a variable. They look like this:
 
@@ -13,7 +11,7 @@ Postman has a list of built-in dynamic variables, which will generate random val
 {{$randomFirstName}}
 {{$randomPhoneNumber}}
 {{$randomInt}}
-{{$randomUUID}}`
+{{$randomUUID}}
 ```
 
 Each time you send a request, Postman replaces these with fresh, randomized values. Perfect for testing how your API handles different inputs.
