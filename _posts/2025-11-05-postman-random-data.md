@@ -6,13 +6,15 @@ Do you know how when you're testing an API, you need a bunch of fake data (email
 
 Postman has a list of built-in dynamic variables, which will generate random values for you, on the fly. You can use them in your request body, headers, URL parameters, or pretty much anywhere you'd normally use a variable. They look like this:
 
+{% raw %}
+```text
+{{$randomEmail}}
+{{$randomFirstName}}
+{{$randomPhoneNumber}}
+{{$randomInt}}{{$randomUUID}}
 ```
-\{\{$randomEmail\}\}
-\{\{$randomFirstName\}\}
-\{\{$randomPhoneNumber\}\}
-\{\{$randomInt\}\}
-\{\{$randomUUID\}\}
-```
+{% endraw %}
+
 Each time you send a request, Postman replaces these with fresh, randomized values. Perfect for testing how your API handles different inputs.
 
 ## Example
