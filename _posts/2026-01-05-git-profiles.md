@@ -8,8 +8,6 @@ tags:
   - profiles
 ---
 
-Hello future Edu!
-
 Working with multiple Git accounts on the same machine can quickly become confusing. One moment you’re committing to a personal project, the next you’re pushing code to a company repository, and suddenly Git is mixing identities. The result: commits tagged with the wrong email, SSH keys that don’t match, sending changes to the wrong git repo and that might cause problems.
 
 This post is a reminder of how to set things up cleanly so future Edu doesn’t have to untangle the mess.
