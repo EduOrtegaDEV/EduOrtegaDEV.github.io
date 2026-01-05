@@ -1,6 +1,6 @@
 ---
 title: "Using multiple git acounts"
-date: 2025-01-05
+date: 2026-01-05
 categories:
   - git
 tags:
