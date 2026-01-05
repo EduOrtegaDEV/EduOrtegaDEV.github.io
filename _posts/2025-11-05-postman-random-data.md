@@ -1,5 +1,3 @@
-Hey future Edu,
-
 Do you know how when you're testing an API, you need a bunch of fake data (email addresses, names, telephone numbers), and you really don't wanna do it by hand, or copy/paste it from a lorem ipsum generator because we are lazy? Postman has a useful feature that does exactly this, and you may have even seen it without knowing it was an option: **random data variables**.
 
 ## What Are Random Variables in Postman?
