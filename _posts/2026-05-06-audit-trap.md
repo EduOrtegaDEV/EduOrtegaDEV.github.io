@@ -32,7 +32,7 @@ Somewhere between Tuesday’s sign-off and Thursday’s rollout, a new vulnerabi
 ## The Five Stages of Dependency Grief
 Denial: "It’s probably just a glitch in the CI/CD runner. Let me restart the job." (It’s not a glitch).
 
-Bargaining: npm audit fix. You pray to the terminal gods for a patch. But wait—there’s no fix available because the vulnerability is so fresh the maintainers haven’t even seen it yet. Or even worse, the need to update to a totally new version.
+Bargaining: `npm audit fix`. You pray to the terminal gods for a patch. But wait—there’s no fix available because the vulnerability is so fresh the maintainers haven’t even seen it yet. Or even worse, the need to update to a totally new version.
 
 Realization: You see the message: `No fix available`. You are a hostage.
 
