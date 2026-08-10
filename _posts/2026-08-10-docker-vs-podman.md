@@ -11,6 +11,8 @@ tags:
   - containerization
 ---
 
+<script src="/assets/scripts/mermaid.min.js"/>
+
 # Docker vs Podman
 
 Your `docker run nginx -p 80:80` command works perfectly. Until the Docker daemon crashes, you lose all container management capabilities. That's it, a single point of failure.
