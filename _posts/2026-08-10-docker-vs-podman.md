@@ -1,3 +1,17 @@
+---
+title: "Docker vs. Podman"
+date: 2026-08-10
+categories:
+  - containers
+  - devops
+tags:
+  - docker
+  - podman
+  - kubernetes
+  - containerization
+---
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11.16.1/dist/mermaid.min.js"></script>
+
 # Docker vs Podman
 
 Your `docker run nginx -p 80:80` command works perfectly. Until the Docker daemon crashes, you lose all container management capabilities. That's it — a single point of failure.
