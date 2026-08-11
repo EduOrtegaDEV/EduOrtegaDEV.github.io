@@ -10,11 +10,6 @@ tags:
   - kubernetes
   - containerization
 ---
-
-<pre class="mermaid">
-graph LR
-  a --- b & c --- d
-</pre>
 <script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.min.js"></script>"/>
 
 # Docker vs Podman
@@ -31,7 +26,7 @@ You will learn how each runtime works under the hood, the security implications 
 
 The core difference between Docker and Podman lies in their architecture. When you run a `docker run` command, your command does not create the container directly. Instead, it sends a request to the Docker daemon. The Docker daemon is a background process that runs continuously on your machine and listens for commands.
 
-<div class="mermaid">
+<pre class="mermaid">
 sequenceDiagram
     participant CLI as $ docker run nginx
     participant Client as Docker CLI
@@ -47,7 +42,7 @@ sequenceDiagram
     Kernel-->>Tools: "containers created"
     Tools-->>Daemon: "container started"
     Daemon-->>Client: 201 Created
-</div>
+</pre>
 
 The daemon then uses supporting tools (such as runc) to make system calls to the Linux kernel. These tools create isolated namespaces for network and file systems. This multi-layer approach ensures containers get their own view of resources, but it introduces a critical dependency: the daemon must be alive for everything to work.
 
