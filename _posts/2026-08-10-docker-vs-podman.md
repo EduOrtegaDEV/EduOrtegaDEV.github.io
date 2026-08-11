@@ -44,7 +44,7 @@ The daemon then uses supporting tools (runc, libcontainer) to make system calls 
 
 The catch: the daemon must be alive for everything to work. If it crashes, container management stops dead.
 
-</pre>bash
+```bash
 # Docker daemon is down — you are locked out of container management
 $ docker ps
 ❌ docker: error while connecting to the daemon: connect: refuse connection
@@ -52,7 +52,7 @@ $ docker ps
 # You cannot even stop running containers
 $ docker stop my-app
 ❌ docker: error while connecting to the daemon...
-</pre>
+```
 
 ## How Podman Works: The Daemonless Alternative
 
@@ -122,7 +122,7 @@ graph TD
 
 Here's what that actually looks like in practice:
 
-</pre>bash
+```bash
 # Inside a compromised Docker container with root privileges
 $ whoami
 root
@@ -132,11 +132,11 @@ $ mount -t bind / /host/mount/
 
 # This container can potentially escape to the host
 $ nsenter --mount -t $$ -p /proc/1/ns/mnt
-</pre>
+```
 
 Now try the same in Podman:
 
-</pre>bash
+```bash
 # Inside a compromised Podman container running as regular user
 $ whoami
 eduardo
@@ -144,7 +144,7 @@ eduardo
 # Attempting to mount host filesystem fails
 $ mount -t bind / /host/mount/
 ❌ permission denied
-</pre>
+```
 
 Podman was explicitly designed to work as a non-root user. If a container is compromised, the damage is limited to whatever privileges the regular user has.
 
@@ -179,14 +179,14 @@ classDiagram
 
 The migration path is smooth. `docker run` becomes `podman run`. `docker build` becomes `podman build`. Many users just create an alias so typing "Docker" actually runs Podman, preserving their muscle memory:
 
-</pre>bash
+```bash
 # Simple alias for seamless migration
 
 echo 'alias docker=podman' >> ~/.zshrc
 # Now your existing scripts work unchanged
 $ docker run nginx:alpine
 # Actually runs podman under the hood
-</pre>
+```
 
 **Migration checklist:**
 
@@ -195,7 +195,7 @@ $ docker run nginx:alpine
 3. Create a Docker alias if you want to preserve your typing habits
 4. Configure project-specific settings: registry, volumes, network
 
-</pre>bash
+```bash
 # Verify Podman is installed and running
 $ podman --version
 podman version 4.6, build abc123, 2026-08-09
@@ -210,7 +210,7 @@ test-nginx  nginx:alpine  Up     0s   80/tcp
 
 $ podman stop test-nginx
 # Container stopped successfully
-</pre>
+```
 
 ## So Which One Should You Use?
 
