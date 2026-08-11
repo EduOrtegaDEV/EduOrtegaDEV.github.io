@@ -12,15 +12,11 @@ tags:
 ---
 <script src="https://cdn.jsdelivr.net/npm/mermaid@11.16.1/dist/mermaid.min.js"></script>
 
-# Docker vs Podman
-
 Your `docker run nginx -p 80:80` command works perfectly. Until the Docker daemon crashes, you lose all container management capabilities. That's it — a single point of failure.
 
 Containerization powers modern development, but the landscape has moved beyond Docker's early dominance. Teams now want better security, simpler architecture, and native Kubernetes alignment. Podman has emerged as a serious alternative.
 
 This post breaks down the architectural differences between Docker and Podman, why one is ideal for laptops while the other wins on Linux servers, and how each runtime works under the hood.
-
----
 
 ## How Docker Works: The Daemon-First Architecture
 
@@ -57,8 +53,6 @@ $ docker ps
 $ docker stop my-app
 ❌ docker: error while connecting to the daemon...
 </pre>
-
----
 
 ## How Podman Works: The Daemonless Alternative
 
@@ -105,8 +99,6 @@ flowchart LR
     F[Podman Run] --> G[crun allocates resources]
     G --> H[Container starts]
 </pre>
-
----
 
 ## Security: Root vs Non-Root Execution
 
@@ -155,8 +147,6 @@ $ mount -t bind / /host/mount/
 </pre>
 
 Podman was explicitly designed to work as a non-root user. If a container is compromised, the damage is limited to whatever privileges the regular user has.
-
----
 
 ## Kubernetes Alignment and Practical Migration
 
@@ -221,8 +211,6 @@ test-nginx  nginx:alpine  Up     0s   80/tcp
 $ podman stop test-nginx
 # Container stopped successfully
 </pre>
-
----
 
 ## So Which One Should You Use?
 
