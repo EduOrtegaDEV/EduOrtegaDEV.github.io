@@ -11,7 +11,11 @@ tags:
   - containerization
 ---
 
-<script src="/assets/scripts/mermaid.min.js"/>
+<pre class="mermaid">
+graph LR
+  a --- b & c --- d
+</pre>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.min.js"></script>"/>
 
 # Docker vs Podman
 
