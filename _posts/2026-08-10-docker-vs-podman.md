@@ -10,7 +10,7 @@ tags:
   - kubernetes
   - containerization
 ---
-<script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.min.js"></script>"/>
+<script src="https://app.unpkg.com/mermaid@11.16.1/files/dist/mermaid.min.js"></script>
 
 # Docker vs Podman
 
@@ -62,7 +62,7 @@ $ docker stop my-app
 ## How Podman Works: The Daemonless Alternative
 Podman eliminates the daemon entirely. When you run a podman run command, Podman works directly with lower-level tools like crun (Container Runtime Universally). These tools interact straight with the Linux kernel to provision container resources.
 
-```mermaid
+<pre class="mermaid">
 graph TD
     subgraph Docker Architecture
         A[User] --> B[Docker CLI]
@@ -79,7 +79,7 @@ graph TD
 
     style B fill:#e1f5fe,stroke:#01579b
     style F fill:#e1f5fe,stroke:#01579b
-```
+</pre>
 
 Since there is no central daemon managing everything, Podman is called daemonless. This architectural shift has significant consequences.
 
@@ -94,7 +94,7 @@ Since there is no central daemon managing everything, Podman is called daemonles
 Analysis and Implications
 The daemonless design means each container command operates independently. This improves resilience but requires understanding how the tools interact directly with kernel primitives like namespaces and cgroups.
 
-```mermaid
+<pre class="mermaid">
 flowchart LR
     A[Docker Run] --> B{Daemon Alive?}
     B--No--> C[All operations fail]
@@ -103,12 +103,12 @@ flowchart LR
 
     F[Podman Run] --> G[crun allocates resources]
     G --> H[Container starts]
-```
+</pre>
 
 ## Security Differences: Root vs Non-Root Execution
 The security implications of these architectural choices are substantial. The Docker daemon traditionally runs with root privileges. Anyone who can control the daemon has potentially powerful access to the host system.
 
-```mermaid
+<pre class="mermaid">
 graph TD
     subgraph Docker Privilege Chain
         A[Container Compromised] --> B{Root Access to Host?}
@@ -122,7 +122,7 @@ graph TD
 
     style C fill:#ff6b6b,stroke:#ff4757
     style F fill:#2ecc71,stroke:#27ae60
-```
+</pre>
 
 ## A Concrete Example of the Problem
 Consider a compromised container running as root in Docker:
@@ -154,7 +154,7 @@ Podman was explicitly designed to work as a regular non-root user. This reduces 
 ## Kubernetes Alignment and Practical Migration
 Podman also borrows the concept of pods from Kubernetes. You can group related containers so they share resources, making Podman a natural stepping stone if you are heading toward Kubernetes.
 
-```mermaid
+<pre class="mermaid">
 classDiagram
     class Container {
         -int id
@@ -177,7 +177,7 @@ classDiagram
     }
 
     Pod "1" *-- " *" Container
-```
+</pre>
 
 The migration path is surprisingly smooth. docker run becomes podman run. docker build becomes podman build. Many users just create an alias so typing "Docker" actually runs Podman, preserving their muscle memory:
 
