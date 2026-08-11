@@ -1,30 +1,16 @@
----
-title: "Docker vs. Podman"
-date: 2026-08-10
-categories:
-  - containers
-  - devops
-tags:
-  - docker
-  - podman
-  - kubernetes
-  - containerization
----
-<script src="https://cdn.jsdelivr.net/npm/mermaid@11.16.1/dist/mermaid.min.js"></script>
-
 # Docker vs Podman
 
-Your `docker run nginx -p 80:80` command works perfectly. Until the Docker daemon crashes, you lose all container management capabilities. That's it, a single point of failure.
+Your `docker run nginx -p 80:80` command works perfectly. Until the Docker daemon crashes, you lose all container management capabilities. That's it — a single point of failure.
 
-Containerization powers modern development, but the landscape has evolved beyond Docker's early dominance. Teams now seek better security, simpler architecture, and native Kubernetes alignment. Podman has emerged as a serious alternative in this space. This post breaks down the architectural differences between Docker and Podman. You will learn why one is ideal for laptops while the other wins on Linux servers, and why Docker remains everywhere despite Podman's daemonless design.
+Containerization powers modern development, but the landscape has moved beyond Docker's early dominance. Teams now want better security, simpler architecture, and native Kubernetes alignment. Podman has emerged as a serious alternative.
 
-You will learn how each runtime works under the hood, the security implications of running as root, and practical guidance on choosing between them based on your workflow.
+This post breaks down the architectural differences between Docker and Podman, why one is ideal for laptops while the other wins on Linux servers, and how each runtime works under the hood.
 
 ---
 
 ## How Docker Works: The Daemon-First Architecture
 
-The core difference between Docker and Podman lies in their architecture. When you run a `docker run` command, your command does not create the container directly. Instead, it sends a request to the Docker daemon. The Docker daemon is a background process that runs continuously on your machine and listens for commands.
+The core difference between Docker and Podman is their architecture. When you run a `docker run` command, your command doesn't create the container directly. Instead, it sends a request to the Docker daemon — a background process that runs continuously on your machine and listens for commands.
 
 <pre class="mermaid">
 sequenceDiagram
@@ -44,23 +30,25 @@ sequenceDiagram
     Daemon-->>Client: 201 Created
 </pre>
 
-The daemon then uses supporting tools (such as runc) to make system calls to the Linux kernel. These tools create isolated namespaces for network and file systems. This multi-layer approach ensures containers get their own view of resources, but it introduces a critical dependency: the daemon must be alive for everything to work.
+The daemon then uses supporting tools (runc, libcontainer) to make system calls to the Linux kernel. These tools create isolated namespaces for network and file systems, so containers get their own view of resources.
 
-*Practical Advice*: If your Docker daemon crashes, all container management stops. Existing containers may keep running but become unmanageable until the daemon recovers:
+The catch: the daemon must be alive for everything to work. If it crashes, container management stops dead.
 
-```bash
+</pre>bash
 # Docker daemon is down — you are locked out of container management
 $ docker ps
 ❌ docker: error while connecting to the daemon: connect: refuse connection
-```
 
-```bash
 # You cannot even stop running containers
 $ docker stop my-app
 ❌ docker: error while connecting to the daemon...
-```
+</pre>
+
+---
+
 ## How Podman Works: The Daemonless Alternative
-Podman eliminates the daemon entirely. When you run a podman run command, Podman works directly with lower-level tools like crun (Container Runtime Universally). These tools interact straight with the Linux kernel to provision container resources.
+
+Podman eliminates the daemon entirely. When you run a `podman run` command, Podman works directly with lower-level tools like crun (Container Runtime Universally). These tools interact straight with the Linux kernel to provision container resources.
 
 <pre class="mermaid">
 graph TD
@@ -81,7 +69,7 @@ graph TD
     style F fill:#e1f5fe,stroke:#01579b
 </pre>
 
-Since there is no central daemon managing everything, Podman is called daemonless. This architectural shift has significant consequences.
+No central daemon managing everything. Each container command operates independently, which improves resilience but requires understanding how the tools interact directly with kernel primitives like namespaces and cgroups.
 
 | Aspect | Docker | Podman |
 |---|---|---|
@@ -91,8 +79,7 @@ Since there is no central daemon managing everything, Podman is called daemonles
 | Single Point of Failure | Yes (daemon) | No |
 | Socket Usage | Unix socket /var/run/docker.sock | No daemon socket required |
 
-Analysis and Implications
-The daemonless design means each container command operates independently. This improves resilience but requires understanding how the tools interact directly with kernel primitives like namespaces and cgroups.
+The architecture change means each container command works independently.
 
 <pre class="mermaid">
 flowchart LR
@@ -105,7 +92,10 @@ flowchart LR
     G --> H[Container starts]
 </pre>
 
-## Security Differences: Root vs Non-Root Execution
+---
+
+## Security: Root vs Non-Root Execution
+
 The security implications of these architectural choices are substantial. The Docker daemon traditionally runs with root privileges. Anyone who can control the daemon has potentially powerful access to the host system.
 
 <pre class="mermaid">
@@ -124,35 +114,39 @@ graph TD
     style F fill:#2ecc71,stroke:#27ae60
 </pre>
 
-## A Concrete Example of the Problem
-Consider a compromised container running as root in Docker:
+Here's what that actually looks like in practice:
 
-```bash
+</pre>bash
 # Inside a compromised Docker container with root privileges
 $ whoami
 root
+
 # This container can access the host filesystem
 $ mount -t bind / /host/mount/
+
 # This container can potentially escape to the host
 $ nsenter --mount -t $$ -p /proc/1/ns/mnt
-```
+</pre>
 
-With Podman, the same compromised container is constrained by the regular user's permissions:
+Now try the same in Podman:
 
-```bash
+</pre>bash
 # Inside a compromised Podman container running as regular user
 $ whoami
 eduardo
+
 # Attempting to mount host filesystem fails
 $ mount -t bind / /host/mount/
 ❌ permission denied
-```
+</pre>
 
-Podman was explicitly designed to work as a regular non-root user. This reduces the blast radius significantly. If a container is compromised, the damage is limited to whatever privileges the regular user has.
+Podman was explicitly designed to work as a non-root user. If a container is compromised, the damage is limited to whatever privileges the regular user has.
 
+---
 
 ## Kubernetes Alignment and Practical Migration
-Podman also borrows the concept of pods from Kubernetes. You can group related containers so they share resources, making Podman a natural stepping stone if you are heading toward Kubernetes.
+
+Podman borrows the concept of pods from Kubernetes. You can group related containers so they share resources, making Podman a natural stepping stone if you're heading toward Kubernetes.
 
 <pre class="mermaid">
 classDiagram
@@ -176,27 +170,28 @@ classDiagram
         +stopAll()
     }
 
-    Pod "1" *-- " *" Container
+    Pod "1" *-- "*" Container
 </pre>
 
-The migration path is surprisingly smooth. docker run becomes podman run. docker build becomes podman build. Many users just create an alias so typing "Docker" actually runs Podman, preserving their muscle memory:
+The migration path is smooth. `docker run` becomes `podman run`. `docker build` becomes `podman build`. Many users just create an alias so typing "Docker" actually runs Podman, preserving their muscle memory:
 
+</pre>bash
 # Simple alias for seamless migration
 
-```bash
 echo 'alias docker=podman' >> ~/.zshrc
 # Now your existing scripts work unchanged
 $ docker run nginx:alpine
 # Actually runs podman under the hood
-```
+</pre>
 
-Step-by-Step Migration Guide
+**Migration checklist:**
+
 1. Install Podman on your system
-2. Test basic operations: podman run, podman ps, podman stop
+2. Test basic operations: `podman run`, `podman ps`, `podman stop`
 3. Create a Docker alias if you want to preserve your typing habits
 4. Configure project-specific settings: registry, volumes, network
 
-```bash
+</pre>bash
 # Verify Podman is installed and running
 $ podman --version
 podman version 4.6, build abc123, 2026-08-09
@@ -211,13 +206,18 @@ test-nginx  nginx:alpine  Up     0s   80/tcp
 
 $ podman stop test-nginx
 # Container stopped successfully
-```
+</pre>
 
-## Conclusion
-The choice between Docker and Podman is not about which is better. It is about what fits your workflow.
+---
 
-- Docker's daemon-based architecture provides a polished, familiar experience that is ideal for development on laptops and Macs.
-- Podman's daemonless design offers better security, simpler architecture, and native Kubernetes alignment for Linux servers.
-- The CLI compatibility between Docker and Podman enables near-zero friction migration.
+## So Which One Should You Use?
 
-And as always, happy coding!
+It's not about which is objectively better. It's about what fits your workflow.
+
+- **Docker** — the daemon-based architecture provides a polished, familiar experience that is ideal for development on laptops and Macs.
+- **Podman** — the daemonless design offers better security, simpler architecture, and native Kubernetes alignment for Linux servers.
+- **The CLI compatibility** between Docker and Podman enables near-zero friction migration if you want to switch.
+
+Both tools do the same job — run containers. Docker got there first and built a polished platform around it. Podman arrived later with a cleaner architecture that better reflects how containers should work on Linux in the first place.
+
+If you're on a Mac with Docker Desktop, stick with Docker for now. If you're on Linux and want something simpler to manage, Podman is worth the switch.
