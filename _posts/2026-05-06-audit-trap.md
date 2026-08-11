@@ -13,11 +13,6 @@ tags:
 
 ![npm audit error](/assets/images/npm-audit-error.png)
 
-## Disclaimer
-This post was created with the help of AI. The situation is real; this was my idea, and AI helped me refine the tone.
-
-## The situation
-
 We’ve all been there. It’s Tuesday afternoon, and you’re on fire. Your user story is complete, the logic is elegant, and the test suite is glowing green. You push your code, confident that Thursday’s deployment will be a victory lap.
 
 Then, Thursday morning arrives. You trigger the pipeline, grab a coffee (Colombian Coffee of course!), and wait for the "Success" notification.
