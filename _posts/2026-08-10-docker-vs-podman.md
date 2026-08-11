@@ -10,7 +10,7 @@ tags:
   - kubernetes
   - containerization
 ---
-<script src="https://app.unpkg.com/mermaid@11.16.1/files/dist/mermaid.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11.16.1/dist/mermaid.min.js"></script>
 
 # Docker vs Podman
 
