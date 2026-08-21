@@ -1,6 +1,6 @@
 ---
 title: "Enum in typeScript is leaky"
-date: 2026-08-00T00:00:00
+date: 2026-08-21T00:00:00
 categories:
   - typescript
 tags:
