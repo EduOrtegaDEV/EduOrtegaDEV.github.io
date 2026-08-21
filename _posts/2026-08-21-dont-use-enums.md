@@ -1,5 +1,5 @@
 ---
-title: "Enum in typeScript is leaky"
+title: "Enum in Typescript is leaky"
 date: 2026-08-21T00:00:00
 categories:
   - typescript
